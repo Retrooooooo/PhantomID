@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "phantomid"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = ["pynput>=1.7","cryptography","keyring","argon2-cffi"]
+
+[project.optional-dependencies]
+dev = ["pytest","pytest-cov","ruff"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,9 @@
+pynput>=1.7
+cryptography
+keyring
+argon2-cffi
+
+[dev]
+pytest
+pytest-cov
+ruff

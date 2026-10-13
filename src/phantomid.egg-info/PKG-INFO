@@ -1,0 +1,12 @@
+Metadata-Version: 2.4
+Name: phantomid
+Version: 0.1.0
+Requires-Python: >=3.11
+Requires-Dist: pynput>=1.7
+Requires-Dist: cryptography
+Requires-Dist: keyring
+Requires-Dist: argon2-cffi
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: pytest-cov; extra == "dev"
+Requires-Dist: ruff; extra == "dev"
